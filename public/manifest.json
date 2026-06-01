@@ -1,0 +1,12 @@
+{
+  "name": "Mundial 2026 Simulador",
+  "short_name": "Mundial 2026",
+  "description": "Calendario, grupos y eliminatorias en horario de Monterrey.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08111f",
+  "theme_color": "#53d1a7",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
