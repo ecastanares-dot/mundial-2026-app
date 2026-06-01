@@ -42,7 +42,7 @@ function Header() {
         </p>
       </div>
       <div className="heroBadge">
-        <span>⚽</span>
+        <span>🏆</span>
         <strong>104</strong>
         <small>partidos</small>
       </div>

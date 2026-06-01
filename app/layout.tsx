@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: 'Mundial 2026 · Simulador de resultados',
   description: 'Calendario, grupos y eliminatorias del Mundial 2026 en horario de Monterrey.',
   manifest: '/manifest.json',
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
