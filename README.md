@@ -10,7 +10,7 @@ Aplicación web en Next.js para consultar el calendario del Mundial FIFA 2026 en
 - Cálculo de puntos de fase de grupos: 3 por triunfo, 1 por empate, 0 por derrota.
 - Ordenamiento de grupos con criterios FIFA: enfrentamiento directo entre equipos empatados, diferencia de goles, goles a favor, fair play y ranking FIFA.
 - Ranking de mejores terceros.
-- Ronda de 32, octavos, cuartos, semifinales, tercer lugar y final.
+- Dieciseisavos, octavos, cuartos, semifinales, tercer lugar y final.
 - Propagación automática de ganadores en eliminatorias.
 - Selector de ganador cuando una eliminatoria queda empatada en marcador capturado, para simular tiempo extra/penales.
 - Banderas junto a cada selección.

@@ -313,6 +313,6 @@ export function formatInMonterrey(iso: string) {
 }
 
 export function phaseOrder(phase: Match['phase']) {
-  const order = ['Grupo','32avos','Octavos','Cuartos','Semifinal','Tercer lugar','Final'];
+  const order = ['Grupo','16avos','Octavos','Cuartos','Semifinal','Tercer lugar','Final'];
   return order.indexOf(phase);
 }

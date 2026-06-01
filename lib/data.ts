@@ -9,7 +9,7 @@ export type Team = {
   fifaRank: number;
 };
 
-export type MatchPhase = 'Grupo' | '32avos' | 'Octavos' | 'Cuartos' | 'Semifinal' | 'Tercer lugar' | 'Final';
+export type MatchPhase = 'Grupo' | '16avos' | 'Octavos' | 'Cuartos' | 'Semifinal' | 'Tercer lugar' | 'Final';
 export type ThirdSlot = '1A'|'1B'|'1D'|'1E'|'1G'|'1I'|'1K'|'1L';
 
 export type Entrant =
@@ -191,22 +191,22 @@ export const MATCHES: Match[] = [
   { no:71, phase:'Grupo', group:'K', etKickoff:'2026-06-27T19:30:00-04:00', venue:'Hard Rock Stadium', city:'Miami', home:T('COL'), away:T('POR') },
   { no:72, phase:'Grupo', group:'K', etKickoff:'2026-06-27T19:30:00-04:00', venue:'Mercedes-Benz Stadium', city:'Atlanta', home:T('COD'), away:T('UZB') },
 
-  { no:73, phase:'32avos', etKickoff:'2026-06-28T15:00:00-04:00', venue:'SoFi Stadium', city:'Los Ángeles', home:R('A',2), away:R('B',2) },
-  { no:74, phase:'32avos', etKickoff:'2026-06-29T16:30:00-04:00', venue:'Gillette Stadium', city:'Boston', home:R('E',1), away:Third('ABCDF','1E') },
-  { no:75, phase:'32avos', etKickoff:'2026-06-29T21:00:00-04:00', venue:'Estadio BBVA', city:'Monterrey', home:R('F',1), away:R('C',2) },
-  { no:76, phase:'32avos', etKickoff:'2026-06-29T13:00:00-04:00', venue:'NRG Stadium', city:'Houston', home:R('C',1), away:R('F',2) },
-  { no:77, phase:'32avos', etKickoff:'2026-06-30T17:00:00-04:00', venue:'MetLife Stadium', city:'Nueva York / Nueva Jersey', home:R('I',1), away:Third('CDFGH','1I') },
-  { no:78, phase:'32avos', etKickoff:'2026-06-30T13:00:00-04:00', venue:'AT&T Stadium', city:'Dallas', home:R('E',2), away:R('I',2) },
-  { no:79, phase:'32avos', etKickoff:'2026-06-30T21:00:00-04:00', venue:'Estadio Azteca', city:'Ciudad de México', home:R('A',1), away:Third('CEFHI','1A') },
-  { no:80, phase:'32avos', etKickoff:'2026-07-01T12:00:00-04:00', venue:'Mercedes-Benz Stadium', city:'Atlanta', home:R('L',1), away:Third('EHIJK','1L') },
-  { no:81, phase:'32avos', etKickoff:'2026-07-01T20:00:00-04:00', venue:"Levi's Stadium", city:'San Francisco Bay Area', home:R('D',1), away:Third('BEFIJ','1D') },
-  { no:82, phase:'32avos', etKickoff:'2026-07-01T16:00:00-04:00', venue:'Lumen Field', city:'Seattle', home:R('G',1), away:Third('AEHIJ','1G') },
-  { no:83, phase:'32avos', etKickoff:'2026-07-02T19:00:00-04:00', venue:'BMO Field', city:'Toronto', home:R('K',2), away:R('L',2) },
-  { no:84, phase:'32avos', etKickoff:'2026-07-02T15:00:00-04:00', venue:'SoFi Stadium', city:'Los Ángeles', home:R('H',1), away:R('J',2) },
-  { no:85, phase:'32avos', etKickoff:'2026-07-02T23:00:00-04:00', venue:'BC Place', city:'Vancouver', home:R('B',1), away:Third('EFGIJ','1B') },
-  { no:86, phase:'32avos', etKickoff:'2026-07-03T18:00:00-04:00', venue:'Hard Rock Stadium', city:'Miami', home:R('J',1), away:R('H',2) },
-  { no:87, phase:'32avos', etKickoff:'2026-07-03T21:30:00-04:00', venue:'Arrowhead Stadium', city:'Kansas City', home:R('K',1), away:Third('DEIJL','1K') },
-  { no:88, phase:'32avos', etKickoff:'2026-07-03T14:00:00-04:00', venue:'AT&T Stadium', city:'Dallas', home:R('D',2), away:R('G',2) },
+  { no:73, phase:'16avos', etKickoff:'2026-06-28T15:00:00-04:00', venue:'SoFi Stadium', city:'Los Ángeles', home:R('A',2), away:R('B',2) },
+  { no:74, phase:'16avos', etKickoff:'2026-06-29T16:30:00-04:00', venue:'Gillette Stadium', city:'Boston', home:R('E',1), away:Third('ABCDF','1E') },
+  { no:75, phase:'16avos', etKickoff:'2026-06-29T21:00:00-04:00', venue:'Estadio BBVA', city:'Monterrey', home:R('F',1), away:R('C',2) },
+  { no:76, phase:'16avos', etKickoff:'2026-06-29T13:00:00-04:00', venue:'NRG Stadium', city:'Houston', home:R('C',1), away:R('F',2) },
+  { no:77, phase:'16avos', etKickoff:'2026-06-30T17:00:00-04:00', venue:'MetLife Stadium', city:'Nueva York / Nueva Jersey', home:R('I',1), away:Third('CDFGH','1I') },
+  { no:78, phase:'16avos', etKickoff:'2026-06-30T13:00:00-04:00', venue:'AT&T Stadium', city:'Dallas', home:R('E',2), away:R('I',2) },
+  { no:79, phase:'16avos', etKickoff:'2026-06-30T21:00:00-04:00', venue:'Estadio Azteca', city:'Ciudad de México', home:R('A',1), away:Third('CEFHI','1A') },
+  { no:80, phase:'16avos', etKickoff:'2026-07-01T12:00:00-04:00', venue:'Mercedes-Benz Stadium', city:'Atlanta', home:R('L',1), away:Third('EHIJK','1L') },
+  { no:81, phase:'16avos', etKickoff:'2026-07-01T20:00:00-04:00', venue:"Levi's Stadium", city:'San Francisco Bay Area', home:R('D',1), away:Third('BEFIJ','1D') },
+  { no:82, phase:'16avos', etKickoff:'2026-07-01T16:00:00-04:00', venue:'Lumen Field', city:'Seattle', home:R('G',1), away:Third('AEHIJ','1G') },
+  { no:83, phase:'16avos', etKickoff:'2026-07-02T19:00:00-04:00', venue:'BMO Field', city:'Toronto', home:R('K',2), away:R('L',2) },
+  { no:84, phase:'16avos', etKickoff:'2026-07-02T15:00:00-04:00', venue:'SoFi Stadium', city:'Los Ángeles', home:R('H',1), away:R('J',2) },
+  { no:85, phase:'16avos', etKickoff:'2026-07-02T23:00:00-04:00', venue:'BC Place', city:'Vancouver', home:R('B',1), away:Third('EFGIJ','1B') },
+  { no:86, phase:'16avos', etKickoff:'2026-07-03T18:00:00-04:00', venue:'Hard Rock Stadium', city:'Miami', home:R('J',1), away:R('H',2) },
+  { no:87, phase:'16avos', etKickoff:'2026-07-03T21:30:00-04:00', venue:'Arrowhead Stadium', city:'Kansas City', home:R('K',1), away:Third('DEIJL','1K') },
+  { no:88, phase:'16avos', etKickoff:'2026-07-03T14:00:00-04:00', venue:'AT&T Stadium', city:'Dallas', home:R('D',2), away:R('G',2) },
 
   { no:89, phase:'Octavos', etKickoff:'2026-07-04T17:00:00-04:00', venue:'Lincoln Financial Field', city:'Filadelfia', home:W(74), away:W(77) },
   { no:90, phase:'Octavos', etKickoff:'2026-07-04T13:00:00-04:00', venue:'NRG Stadium', city:'Houston', home:W(73), away:W(75) },

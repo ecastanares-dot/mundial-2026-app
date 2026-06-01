@@ -160,7 +160,7 @@ function CalendarSection({ scores, setScores, extras }: { scores: ScoresByMatch;
       .sort((a, b) => new Date(a.etKickoff).getTime() - new Date(b.etKickoff).getTime() || a.no - b.no);
   }, [filter]);
 
-  const phases = ['todos','Grupo','32avos','Octavos','Cuartos','Semifinal','Tercer lugar','Final'] as const;
+  const phases = ['todos','Grupo','16avos','Octavos','Cuartos','Semifinal','Tercer lugar','Final'] as const;
 
   return (
     <section>
@@ -265,7 +265,7 @@ function KnockoutSection({ scores, setScores, extras }: { scores: ScoresByMatch;
       </div>
       {!complete && <div className="notice">Aún no están capturados todos los resultados de grupos. La llave mostrará equipos conforme se puedan resolver.</div>}
       <div className="roundGrid">
-        {['32avos','Octavos','Cuartos','Semifinal','Tercer lugar','Final'].map((phase) => (
+        {['16avos','Octavos','Cuartos','Semifinal','Tercer lugar','Final'].map((phase) => (
           <div className="roundColumn" key={phase}>
             <h3>{phase}</h3>
             {knockout.filter((m) => m.phase === phase).map((match) => (
