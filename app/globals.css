@@ -397,3 +397,116 @@ tr.third td strong { color: var(--cyan); }
   .scoreBox input { width: 100%; }
   table { min-width: 520px; }
 }
+
+.dailyPrompt {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: center;
+  margin: 0 0 18px;
+  padding: 16px 18px;
+  border: 1px solid rgba(244, 197, 77, .38);
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at 0 0, rgba(244, 197, 77, .16), transparent 22rem),
+    rgba(12, 24, 52, .96);
+  box-shadow: 0 16px 42px rgba(0,0,0,.22);
+}
+.dailyPrompt strong { color: var(--gold-2); }
+.dailyPrompt p { margin: 6px 0 0; color: var(--muted); line-height: 1.45; }
+.promptMessage { color: var(--cyan) !important; }
+.promptActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.promptActions button,
+.cityButton {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  background: rgba(255,255,255,.07);
+  padding: 10px 14px;
+  transition: transform .15s ease, background .15s ease;
+}
+.promptActions button:first-child {
+  color: #271900;
+  background: linear-gradient(135deg, var(--gold), var(--gold-2));
+  border-color: transparent;
+  font-weight: 800;
+}
+.promptActions button:hover,
+.cityButton:hover { transform: translateY(-1px); background: rgba(255,255,255,.12); }
+.promptActions button:disabled { opacity: .55; cursor: wait; transform: none; }
+.secondaryAction { color: var(--text) !important; background: rgba(255,255,255,.08) !important; border-color: var(--line) !important; }
+.iconButton {
+  width: 40px;
+  height: 40px;
+  padding: 0 !important;
+  display: grid;
+  place-items: center;
+  font-size: 1.35rem;
+}
+
+.detailPanel {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 16px;
+  margin-bottom: 18px;
+  background:
+    radial-gradient(circle at 100% 0, rgba(37, 213, 255, .12), transparent 22rem),
+    rgba(12,24,52,.92);
+}
+.detailPanel h3 { margin: 0 0 12px; }
+.teamButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  font-weight: 800;
+  text-align: left;
+}
+.teamButton:hover { color: var(--gold-2); text-decoration: underline; text-underline-offset: 3px; }
+.selectedRow { background: rgba(244, 197, 77, .09); }
+
+.cityLayout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+.cityList {
+  position: sticky;
+  top: 68px;
+  display: grid;
+  gap: 8px;
+  max-height: calc(100vh - 92px);
+  overflow: auto;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(12,24,52,.86);
+}
+.cityButton {
+  border-radius: 14px;
+  text-align: left;
+}
+.cityButton.activeCity {
+  color: #271900;
+  background: linear-gradient(135deg, var(--gold), var(--red));
+  border-color: transparent;
+  font-weight: 800;
+}
+.cityPanel { margin-bottom: 0; }
+
+@media (max-width: 900px) {
+  .dailyPrompt { grid-template-columns: 1fr; }
+  .promptActions { justify-content: flex-start; }
+  .cityLayout { grid-template-columns: 1fr; }
+  .cityList { position: static; max-height: none; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+}
+.winnerSelect { grid-column: 1 / -1; }
